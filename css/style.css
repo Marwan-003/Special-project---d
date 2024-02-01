@@ -21,6 +21,43 @@
   width: 100%;
   margin: auto;
 }
+.loader-container{
+  position: fixed;
+  z-index: 500;
+  background-color: #282828;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -35px 0 #FFF, 35px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -35px 0 #fb6078, 35px 0 #FFF;
+  }
+  66% {
+    background: #fb6078;
+    box-shadow: -35px 0 #FFF, 35px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -35px 0 #FFF, 35px 0 #fb6078;
+  }
+}
 /* start setting box  */
 .setting-box{
 background-color: var(--lightBlue-color);

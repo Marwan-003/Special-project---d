@@ -5,6 +5,10 @@ let landing = document.querySelector(".landing-page")
 let backgroundArray = ["Background-1.jpg" , "Background-2.jpg" ,"Background-4.jpg" , "Background-5.jpg"]
 let btns = document.querySelectorAll(".setting-content .option-container .btn-shape")
 
+window.addEventListener(("load") , () => {
+  document.querySelector(".loader-container").style.display = "none"
+})
+
 let isRandom = false; 
 if (localStorage.getItem("isRandom") === "true"){
   isRandom = true;
@@ -72,7 +76,7 @@ function randomBackground() {
     randomInterval = setInterval(() => {
       let random = Math.floor(Math.random() * backgroundArray.length)
       landing.style.backgroundImage = 'url("imgs/'+backgroundArray[random]+'")'
-     } ,2000)
+     } ,5000)
   } else {
     clearInterval(randomInterval)
   }
