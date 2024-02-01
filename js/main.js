@@ -2,10 +2,10 @@
 let settingBox = document.querySelector(".setting-box")
 let settingIcon = document.querySelector(".gear-icon")
 let landing = document.querySelector(".landing-page")
-let backgroundArray = ["Background-1.jpg" , "Background-2.png" ,"Background-4.jpg" , "Background-5.jpg"]
+let backgroundArray = ["Background-1.jpg" , "Background-2.jpg" ,"Background-4.jpg" , "Background-5.jpg"]
 let btns = document.querySelectorAll(".setting-content .option-container .btn-shape")
 
-let isRandom = true; 
+let isRandom = false; 
 if (localStorage.getItem("isRandom") === "true"){
   isRandom = true;
   document.querySelectorAll(".setting-content .background-option .btn-shape").forEach((ele) => {ele.classList.remove("btn-active")})
@@ -71,7 +71,7 @@ function randomBackground() {
   if (isRandom === true){
     randomInterval = setInterval(() => {
       let random = Math.floor(Math.random() * backgroundArray.length)
-      landing.style.backgroundImage = 'url("../imgs/'+backgroundArray[random]+'")'
+      landing.style.backgroundImage = 'url("imgs/'+backgroundArray[random]+'")'
      } ,2000)
   } else {
     clearInterval(randomInterval)

@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  font-display: swap;
 }
 
 
@@ -185,6 +186,11 @@ transition: .5s;
   border-style: solid;
   border-color: transparent transparent transparent var(--Theme-color);
   
+}
+@media (max-width:480px) {
+.nav-bullets{
+  right: 40px;
+}
 }
 /* End bullets */
 
@@ -381,6 +387,14 @@ transition: .5s;
 }
 
 }
+@media (max-width:480px) {
+ .landing-page .text-container{
+  width: 70%;
+  }
+  .landing-page .text-heading{
+    font-size: 35px;
+  }
+}
 
 /* end landing page */
 /* Start about us  */
@@ -431,7 +445,17 @@ transition: .5s;
     text-align: center;
   }
 }
-
+@media (max-width:480px) {
+  .about-us .container .about-us-contents{
+    margin: 0;
+  }
+  .about-us .container .about-us-contents p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+}
 /* End about us  */
 
 /* Start our skills  */
@@ -489,6 +513,11 @@ transition: .5s;
   .our-skills .container h2{
     font-size: 40px;
     margin-bottom: 50px;
+  }
+}
+@media (max-width:480px) {
+  .our-skills .skills-container .skill-box .progress{
+    height: 25px;
   }
 }
 /* End our skills  */
@@ -567,7 +596,11 @@ transition: .5s;
     margin-bottom: 50px;
   }
 }
-
+@media (max-width:480px) {
+  .gallery .container .imgs-container img{
+    width: 80%;
+  }
+}
 /* End gallery */
 /* start timeline */
 .timeline {
@@ -684,6 +717,16 @@ transition: .5s;
   }
 
 }
+@media (max-width:480px) {
+  .timeline .timeline-content .left , .timeline .timeline-content .right  {
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .timeline .timeline-content .timeline-tittle{
+    text-align: center;
+  }
+}
 /* End timeline */
  /* Start Our features */
  .our-features{
@@ -751,6 +794,13 @@ transition: .5s;
   .our-features .feature-box{
     width: 100% ;
     margin-block: 25px;
+  }
+ }
+ @media (max-width:480px) {
+  .our-features .feature-box{
+    width: 80%;
+    float: none;
+    margin-inline: auto ;
   }
  }
  /* End Our features */
