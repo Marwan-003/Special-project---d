@@ -238,7 +238,8 @@ transition: .5s;
   position: relative;
   background-image: url(../imgs/Background-1.jpg);
   background-size: cover;
-  transition: 1.5s;
+  transition: 2.5s;
+  background-position: center;
 }
 .landing-page .overlay{
   position: absolute;

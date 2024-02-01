@@ -76,7 +76,7 @@ function randomBackground() {
     randomInterval = setInterval(() => {
       let random = Math.floor(Math.random() * backgroundArray.length)
       landing.style.backgroundImage = 'url("imgs/'+backgroundArray[random]+'")'
-     } ,5000)
+     } ,7000)
   } else {
     clearInterval(randomInterval)
   }
